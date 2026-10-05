@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan EMI & Amortization Calculator | Prime Fortune Tomi Zaisan</title>
+  <meta name="description" content="Simulate monthly loan EMI, interest outflow, and principal amortization for Home Loans, Business Loans, and Loan Against Property.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reusable Site Header -->
+  <div id="site-header"></div>
+
+  <!-- Page Banner -->
+  <section class="section-dark" style="padding: 55px 0 60px; text-align: center; border-bottom: 1px solid rgba(197, 168, 128, 0.2);">
+    <div class="container">
+      <div class="section-tag dark-tag">Financial Simulator</div>
+      <h1 class="section-title" style="font-size: 2.4rem;">Loan EMI & <span class="text-gold">Amortization Calculator</span></h1>
+      <p class="section-desc" style="max-width: 620px; margin: 0 auto;">Simulate repayment outflows, calculate interest savings, and structure your optimal borrowing tenure.</p>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section class="section calculator-section">
+    <div class="container">
+      <div class="calculator-card">
+        <!-- Controls Column -->
+        <div class="calc-controls">
+          <div class="calc-type-selector">
+            <button class="calc-type-btn active" data-type="housing">Home Loan</button>
+            <button class="calc-type-btn" data-type="business">Business Loan</button>
+            <button class="calc-type-btn" data-type="property">Loan Against Property</button>
+            <button class="calc-type-btn" data-type="gold">Gold Loan</button>
+            <button class="calc-type-btn" data-type="private">Private Loan</button>
+          </div>
+
+          <!-- Slider 1 -->
+          <div class="calc-slider-group">
+            <div class="slider-header">
+              <span class="slider-title"><i class="fa-solid fa-indian-rupee-sign" style="color:var(--c-gold); margin-right:4px;"></i> Required Loan Amount</span>
+              <div class="slider-value-box" id="display-amount">₹45,00,000</div>
+            </div>
+            <input type="range" class="custom-range" id="calc-amount" min="500000" max="100000000" step="100000" value="4500000">
+            <div class="slider-limits">
+              <span id="calc-min-amount">₹5 Lakh</span>
+              <span id="calc-max-amount">₹10 Crore</span>
+            </div>
+          </div>
+
+          <!-- Slider 2 -->
+          <div class="calc-slider-group">
+            <div class="slider-header">
+              <span class="slider-title"><i class="fa-solid fa-percent" style="color:var(--c-gold); margin-right:4px;"></i> Annual Interest Rate</span>
+              <div class="slider-value-box" id="display-rate">8.50%</div>
+            </div>
+            <input type="range" class="custom-range" id="calc-rate" min="7.5" max="18" step="0.1" value="8.5">
+            <div class="slider-limits">
+              <span>7.5%</span>
+              <span>18.0%</span>
+            </div>
+          </div>
+
+          <!-- Slider 3 -->
+          <div class="calc-slider-group">
+            <div class="slider-header">
+              <span class="slider-title"><i class="fa-solid fa-calendar-days" style="color:var(--c-gold); margin-right:4px;"></i> Loan Tenure (Years)</span>
+              <div class="slider-value-box" id="display-tenure">20 Years</div>
+            </div>
+            <input type="range" class="custom-range" id="calc-tenure" min="1" max="30" step="1" value="20">
+            <div class="slider-limits">
+              <span>1 Year</span>
+              <span>30 Years</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Column -->
+        <div class="calc-results">
+          <div>
+            <div class="monthly-emi-label">Monthly EMI Payable</div>
+            <div class="monthly-emi-amount" id="res-monthly-emi">₹39,049</div>
+
+            <div class="calc-chart-container">
+              <div class="chart-svg-box">
+                <svg width="100" height="100" viewBox="0 0 120 120" style="transform: rotate(-90deg);">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="#38bdf8" stroke-width="14"></circle>
+                  <circle id="chart-principal-circle" cx="60" cy="60" r="50" fill="none" stroke="#c5a880" stroke-width="14" stroke-dasharray="314.159" stroke-dashoffset="140"></circle>
+                </svg>
+              </div>
+
+              <div class="chart-breakdown">
+                <div class="breakdown-row">
+                  <div class="color-dot dot-principal"></div>
+                  <div class="breakdown-info">
+                    <span class="breakdown-name">Principal Amount</span>
+                    <span class="breakdown-val" id="res-principal">₹45,00,000</span>
+                  </div>
+                </div>
+                <div class="breakdown-row">
+                  <div class="color-dot dot-interest"></div>
+                  <div class="breakdown-info">
+                    <span class="breakdown-name">Total Interest</span>
+                    <span class="breakdown-val" id="res-total-interest">₹48,71,811</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-summary-cards">
+              <div class="summary-stat-box">
+                <div class="summary-stat-label">Total Amount Payable</div>
+                <div class="summary-stat-value" id="res-total-amount">₹93,71,811</div>
+              </div>
+              <div class="summary-stat-box">
+                <div class="summary-stat-label">Upfront Advisory Retainer</div>
+                <div class="summary-stat-value" style="color:var(--c-gold);">Nil Upfront</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-gold" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane"></i> Apply for this Structure
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Site Footer -->
+  <div id="site-footer"></div>
+
+  <!-- JavaScript -->
+  <script src="js/components.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

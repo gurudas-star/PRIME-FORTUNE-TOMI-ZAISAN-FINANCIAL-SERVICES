@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lending Solutions & Institutional Credit | Prime Fortune Tomi Zaisan</title>
+  <meta name="description" content="Explore our 7 core lending solutions: Business Loans, Bank Loans, Housing Loans, Gold Loans, Loan Against Property, Equity Loans, and Private Loans.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reusable Site Header -->
+  <div id="site-header"></div>
+
+  <!-- Page Banner -->
+  <section class="section-dark" style="padding: 55px 0 60px; text-align: center; border-bottom: 1px solid rgba(197, 168, 128, 0.2);">
+    <div class="container">
+      <div class="section-tag dark-tag">Advisory Portfolio</div>
+      <h1 class="section-title" style="font-size: 2.4rem;">Institutional <span class="text-gold">Lending Solutions</span></h1>
+      <p class="section-desc" style="max-width: 620px; margin: 0 auto;">Bespoke capital facilitation, structured credit lines, and asset leverage facilitated through tier-1 banking relationships.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section class="section services-section">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="services-filter-tabs">
+        <button class="filter-btn active" data-filter="all">All 7 Lending Solutions</button>
+        <button class="filter-btn" data-filter="business">Commercial & Corporate Debt</button>
+        <button class="filter-btn" data-filter="residential">Residential & Home Loans</button>
+        <button class="filter-btn" data-filter="asset">Asset Leverage & Securities</button>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- 1. Business Loans -->
+        <div class="service-card" data-category="business" id="business">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+            <span class="service-badge">Commercial Debt</span>
+          </div>
+          <h3 class="service-title">Business Loans</h3>
+          <p class="service-desc">Flexible financing solutions to support business expansion, working capital and operational growth.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Unsecured working capital up to ₹15 Cr</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Low rates with flexible collateral options</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> 48-hour priority sanction turnarounds</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('business')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 2. Bank Loans -->
+        <div class="service-card" data-category="business" id="bank">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+            <span class="service-badge">Institutional</span>
+          </div>
+          <h3 class="service-title">Bank Loans</h3>
+          <p class="service-desc">Assistance in securing competitive loan options through established banking relationships.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Direct tier-1 banking network access</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Structured Term Loans & OD/CC Facilities</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Zero hidden advisory or processing hurdles</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('bank')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 3. Housing Loans -->
+        <div class="service-card" data-category="residential" id="housing">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-house-chimney"></i></div>
+            <span class="service-badge">Residential</span>
+          </div>
+          <h3 class="service-title">Housing Loans</h3>
+          <p class="service-desc">Helping individuals and families finance their dream homes with customized home loan solutions.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Lowest rates starting from 8.35% p.a.</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Repayment tenures up to 30 years</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Balance transfer with attractive top-up</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('housing')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 4. Gold Loans -->
+        <div class="service-card" data-category="asset" id="gold">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-coins"></i></div>
+            <span class="service-badge">Instant Liquidity</span>
+          </div>
+          <h3 class="service-title">Gold Loans</h3>
+          <p class="service-desc">Quick and secure funding against gold assets with convenient repayment options.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Instant disbursals within 30–60 minutes</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Insured bank vault custodian storage</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> No stringent credit score mandates</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('gold')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 5. Loan Against Property -->
+        <div class="service-card" data-category="asset" id="property">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-city"></i></div>
+            <span class="service-badge">Asset-Backed</span>
+          </div>
+          <h3 class="service-title">Loan Against Property</h3>
+          <p class="service-desc">Unlock the value of residential or commercial property to meet personal or business financial requirements.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> High loan sanctions up to ₹25+ Crore</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Significantly lower rates than unsecured debt</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Extended repayment tenures up to 20 years</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('property')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 6. Equity Loans -->
+        <div class="service-card" data-category="asset" id="equity">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="service-badge">Securities</span>
+          </div>
+          <h3 class="service-title">Equity Loans</h3>
+          <p class="service-desc">Leverage investments and financial assets to access liquidity while retaining long-term value.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Quick liquidity without selling your portfolio</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Retain dividends, bonuses, & equity upside</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Interest charged only on utilized amount</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('equity')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+        <!-- 7. Private Loans -->
+        <div class="service-card" data-category="business" id="private">
+          <div class="service-card-top">
+            <div class="service-icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <span class="service-badge">Bespoke Placements</span>
+          </div>
+          <h3 class="service-title">Private Loans</h3>
+          <p class="service-desc">Tailored financing solutions designed to meet unique funding requirements and bridging capital.</p>
+          <div class="service-features-list">
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Customized deal terms for urgent capital</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Flexible repayment & milestone schedules</div>
+            <div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> Strict confidentiality and VIP advisory</div>
+          </div>
+          <div class="service-card-action">
+            <span class="service-link" onclick="openServiceModal('private')">View Details <i class="fa-solid fa-arrow-right"></i></span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicative Rates Table -->
+      <div style="margin-top: 50px;">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <div class="section-tag">Rate Transparency</div>
+          <h3 class="section-title" style="font-size: 1.65rem;">Indicative <span class="text-gold">Interest Rates & Tenures</span></h3>
+          <p class="section-desc">Benchmark rates facilitated across our 25+ institutional banking relationships.</p>
+        </div>
+
+        <div class="rates-table-wrapper">
+          <table class="rates-table">
+            <thead>
+              <tr>
+                <th>Lending Vertical</th>
+                <th>Starting Interest Rate (p.a.)</th>
+                <th>Maximum Sanction Amount</th>
+                <th>Tenure Range</th>
+                <th>Processing Speed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Housing Loans</strong></td>
+                <td><span class="rate-badge">From 8.35%</span></td>
+                <td>Up to ₹15 Crore</td>
+                <td>Up to 30 Years</td>
+                <td>3 – 5 Days</td>
+              </tr>
+              <tr>
+                <td><strong>Loan Against Property (LAP)</strong></td>
+                <td><span class="rate-badge">From 8.90%</span></td>
+                <td>Up to ₹25+ Crore</td>
+                <td>Up to 20 Years</td>
+                <td>7 – 10 Days</td>
+              </tr>
+              <tr>
+                <td><strong>Gold Loans</strong></td>
+                <td><span class="rate-badge">From 8.75%</span></td>
+                <td>Up to ₹2 Crore</td>
+                <td>1 – 5 Years</td>
+                <td>Same Day (30 Mins)</td>
+              </tr>
+              <tr>
+                <td><strong>Business Loans & Working Capital</strong></td>
+                <td><span class="rate-badge">From 9.25%</span></td>
+                <td>Up to ₹15 Crore</td>
+                <td>1 – 7 Years</td>
+                <td>48 – 72 Hours</td>
+              </tr>
+              <tr>
+                <td><strong>Equity Loans (LAS)</strong></td>
+                <td><span class="rate-badge">From 8.50%</span></td>
+                <td>Up to ₹10 Crore</td>
+                <td>Overdraft Limit</td>
+                <td>24 Hours</td>
+              </tr>
+              <tr>
+                <td><strong>Bank Loans & Institutional Credit</strong></td>
+                <td><span class="rate-badge">Competitive Base</span></td>
+                <td>Up to ₹50+ Crore</td>
+                <td>Customized</td>
+                <td>Fast Priority</td>
+              </tr>
+              <tr>
+                <td><strong>Private & Bridge Loans</strong></td>
+                <td><span class="rate-badge">Bespoke Terms</span></td>
+                <td>Up to ₹25 Crore</td>
+                <td>Short/Medium Term</td>
+                <td>Express Disbursal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Site Footer -->
+  <div id="site-footer"></div>
+
+  <!-- JavaScript -->
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
